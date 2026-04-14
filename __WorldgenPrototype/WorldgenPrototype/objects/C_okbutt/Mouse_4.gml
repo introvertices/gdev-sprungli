@@ -14,6 +14,25 @@ for (var i=1; i<string_length(global.seedInput); i++){
 global.seedConverted = hash
 random_set_seed(global.seedConverted,true)
 show_debug_message("Seed: " +string(global.seedConverted))
-show_debug_message("Random number calling irandom 10: " +string(irandom(10)))
-show_debug_message("Random number calling irandom 50: " +string(irandom(50)))
-show_debug_message("Random number calling irandom 100: " +string(irandom(100)))
+
+biomeUsed = choose(biomes.airy,biomes.dirt,biomes.quarry)
+
+show_debug_message(string(array_last(biomeUsed)))
+
+for (var i = 0; i <worldHeight; i++){
+    var tempRow = []
+    
+    for (var j = 0; j <worldWidth; j++){
+        
+        var block = biomeUsed[irandom(array_length(biomeUsed)-2)]
+        array_push(tempRow,block)
+        
+    }
+    
+    
+    show_debug_message(string(tempRow))
+    
+    
+    
+}
+

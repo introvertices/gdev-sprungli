@@ -9,4 +9,6 @@ spawnAngle = irandom(365)
 //distanceAway = irandom_range(1000,10000)
 distanceAway = depth
 
+show_debug_message("I'm at " +string(x) +"," +string(y) + " on layer " +string(distanceAway))
+
 

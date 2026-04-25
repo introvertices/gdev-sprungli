@@ -1,5 +1,15 @@
 scaling = random_range(0.25,1) // sprite is 750px-ish that's big enough for max size
 
+name = planet_name()
+show_debug_message(string(name))
+
+speed = 0.1
+
+image_speed = 0
+image_UL = irandom(sprite_get_number(sp_planetTemp))
+image_OL = irandom(sprite_get_number(sp_planetTempOL))
+
+
 // colouring
 c_1 = planet_colour()
 
@@ -18,5 +28,7 @@ distanceAway = depth
 
 
 show_debug_message("I'm at " +string(x) +"," +string(y) + " on layer " +string(distanceAway))
+
+has_wrapped = false
 
 

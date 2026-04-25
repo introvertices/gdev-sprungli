@@ -1,6 +1,5 @@
 //movement
 
-//show_debug_message("x: " + string(x))
 
 if (keyboard_check(vk_left)){
     //x += C_shipMoveView.shipViewSpeed * (distanceAway/100)

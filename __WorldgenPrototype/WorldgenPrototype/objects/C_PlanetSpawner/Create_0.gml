@@ -1,5 +1,6 @@
 randomise()
 planetsToCreate = irandom_range(3,20)
+//planetsToCreate = 1
 
 
 for (var i = 0; i < planetsToCreate; i++){

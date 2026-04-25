@@ -1,48 +1,65 @@
-function pick(arr) {
-    return arr[irandom(array_length(arr) - 1)];
+function syllable(syllableChoice){
+    
+    
+    var start =  ["K'y","Ry","Sh","Dr","Pr","Bl","Sl","Or","Ad","Ax","Z","Yor","Vy","Ash","Oy","Az","Orph","Ph","Gl","Gar","Tar","Kab","Rez","Un"]
+    //var vowels = ["a","e","i","o","u"]
+    var blends = ["ak'y","esh","att","ador","idar","ed","ur","ur'z","ab","idr","isl","ell","","ok","oz","ott","orz","ark","ik"]
+    var codas =  ["ang","ile","or","as","ophi","apax","orex","aflox","oshy","ixia","ut-arx","ole-xyn","a'zir","a'zar","o-bor","ebyr","e'fae","isyn","ium","ior","ion","eon"]
+    
+    var chosenFrag = ""
+    
+    if (syllableChoice == "start"){
+        chosenFrag = start[irandom(array_length(start)-1)]
+    }
+    
+    //else if (syllableChoice == "vowels"){
+        //chosenFrag = vowels[irandom(array_length(vowels)-1)]
+    //}
+    
+    else if (syllableChoice == "blends"){
+        var sep = irandom(5)
+        if (sep == 0){chosenFrag+="'"}
+        
+        
+        
+        chosenFrag += blends[irandom(array_length(blends)-1)]
+    }
+    
+    else if (syllableChoice == "codas"){
+        chosenFrag = codas[irandom(array_length(codas)-1)]
+    }
+    
+    return chosenFrag
+    
+    
 }
 
-function weighted(arr, bias) {
-    var pool = [];
-    for (var i = 0; i < array_length(arr); i++) {
-        var repeats = (i < bias) ? 2 : 1;
-        for (var j = 0; j < repeats; j++) {
-            array_push(pool, arr[i]);
+
+function create_planet_name(){
+    
+
+    
+    var name = ""
+    var nameLength = irandom_range(2,3)
+    
+    for (var i = 0; i <= nameLength; i++){
+        
+       if (i == 0){
+        name += syllable("start")
+        } 
+        
+       else if (i < nameLength) && (i > 0){
+            name += syllable("blends")
         }
+       else if (i == nameLength){
+            name += syllable("codas")
+        }
+        
     }
-    return pick(pool);
+    
+    return name
 }
 
-function make_syllable() {
-    var vowels = ["a","e","i","o","u","ae","ea","io","oo","oy"];
-    var consonants = ["b","d","g","k'","v","s","m","n","l","r","h","y","x"];
-    var blends = ["ada","a-ga","ata","k'ya","k'yo","sha","sho","sh-u","eda","edo","exa","exo","et'o","all","ell","yan","yix","yin","phi","pax","pal","pau","dor","dar","tor","tar","uda","uro","ur'z", "br","bl","dr","kr","kl","sl"];
-    var codas = ["", "n","m","l","r","s","k","d",];
 
-    var onset;
-    if (random(1) < 0.25) {
-        onset = pick(blends);
-    } else {
-        onset = pick(consonants);
-    }
 
-    if (random(1) < 0.15) {
-        onset = "";
-    }
 
-    var vowel = weighted(vowels, 3);
-    var coda = weighted(codas, 3);
-
-    return onset + vowel + coda;
-}
-
-function planet_name() {
-    var syllables = irandom_range(2, 3);
-    var name = "";
-
-    for (var i = 0; i < syllables; i++) {
-        name += make_syllable();
-    }
-
-    return string_upper(string_copy(name, 1, 1)) + string_delete(name, 1, 1);
-}

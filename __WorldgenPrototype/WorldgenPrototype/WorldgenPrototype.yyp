@@ -30,6 +30,7 @@
     {"id":{"name":"C_PlanetSpawner","path":"objects/C_PlanetSpawner/C_PlanetSpawner.yy",},},
     {"id":{"name":"C_seedInput","path":"objects/C_seedInput/C_seedInput.yy",},},
     {"id":{"name":"C_shipMoveView","path":"objects/C_shipMoveView/C_shipMoveView.yy",},},
+    {"id":{"name":"R_debug","path":"rooms/R_debug/R_debug.yy",},},
     {"id":{"name":"R_viewSpace","path":"rooms/R_viewSpace/R_viewSpace.yy",},},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
     {"id":{"name":"scr_naming","path":"scripts/scr_naming/scr_naming.yy",},},
@@ -44,6 +45,7 @@
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
+    {"roomId":{"name":"R_debug","path":"rooms/R_debug/R_debug.yy",},},
     {"roomId":{"name":"R_viewSpace","path":"rooms/R_viewSpace/R_viewSpace.yy",},},
     {"roomId":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
   ],

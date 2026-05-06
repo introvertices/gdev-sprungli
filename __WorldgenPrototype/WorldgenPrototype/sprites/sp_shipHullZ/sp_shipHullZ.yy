@@ -1,6 +1,6 @@
 {
   "$GMSprite":"v2",
-  "%Name":"sp_shipHull",
+  "%Name":"sp_shipHullZ",
   "bboxMode":0,
   "bbox_bottom":1079,
   "bbox_left":0,
@@ -12,28 +12,28 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"v1","%Name":"55aa65b6-759a-426d-b3ac-ac49497d4c4a","name":"55aa65b6-759a-426d-b3ac-ac49497d4c4a","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"64f96c1a-a40d-4c4d-8d40-0ca050d32c78","name":"64f96c1a-a40d-4c4d-8d40-0ca050d32c78","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
   "height":1080,
   "HTile":false,
   "layers":[
-    {"$GMImageLayer":"","%Name":"f25c592f-859f-4d0d-b7cd-623f48dd5fe4","blendMode":0,"displayName":"default","isLocked":false,"name":"f25c592f-859f-4d0d-b7cd-623f48dd5fe4","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
+    {"$GMImageLayer":"","%Name":"7944d261-9a4b-4b49-a2cc-de3badbff219","blendMode":0,"displayName":"default","isLocked":false,"name":"7944d261-9a4b-4b49-a2cc-de3badbff219","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
-  "name":"sp_shipHull",
+  "name":"sp_shipHullZ",
   "nineSlice":null,
   "origin":0,
   "parent":{
-    "name":"pixelart",
-    "path":"folders/sprites/pixelart.yy",
+    "name":"old",
+    "path":"folders/sprites/old.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",
   "resourceVersion":"2.0",
   "sequence":{
     "$GMSequence":"v1",
-    "%Name":"sp_shipHull",
+    "%Name":"sp_shipHullZ",
     "autoRecord":true,
     "backdropHeight":768,
     "backdropImageOpacity":0.5,
@@ -57,7 +57,7 @@
       "resourceType":"KeyframeStore<MomentsEventKeyframe>",
       "resourceVersion":"2.0",
     },
-    "name":"sp_shipHull",
+    "name":"sp_shipHullZ",
     "playback":1,
     "playbackSpeed":30.0,
     "playbackSpeedType":0,
@@ -69,8 +69,8 @@
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"55aa65b6-759a-426d-b3ac-ac49497d4c4a","path":"sprites/sp_shipHull/sp_shipHull.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"0fb07df3-776e-4b61-b32d-b761dfb1e2f5","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"64f96c1a-a40d-4c4d-8d40-0ca050d32c78","path":"sprites/sp_shipHullZ/sp_shipHullZ.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"9be6f1e8-198a-430a-ad0c-d35ba9503160","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,

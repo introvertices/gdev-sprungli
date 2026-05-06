@@ -34,8 +34,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sp_planetTemp",
-    "path":"sprites/sp_planetTemp/sp_planetTemp.yy",
+    "name":"sp_planetTempZ",
+    "path":"sprites/sp_planetTempZ/sp_planetTempZ.yy",
   },
   "spriteMaskId":null,
   "visible":true,
